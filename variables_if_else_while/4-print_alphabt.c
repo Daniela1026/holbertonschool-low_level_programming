@@ -5,10 +5,11 @@
 *
 * Return: 0
 */
-/*putchar*/
+
 int main(void)
 {
 	char l = 'a';
+
 	while (l <= 'z')
 	{
 		if (l != 'e' && l != 'q')
