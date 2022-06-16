@@ -1,28 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
-* main - numbers must be separated ,
+* main - Numbers must be separated by ,,
 *
 * Return: 0
 */
 
 int main(void)
 {
-	int n = '0';
-
-	while (n <= '9')
+	int i = '0';
+	while (i <= '9')
 	{
-		putchar(n);
-
-		if (n <= '9')
+		putchar(i);
+		
+		if (i == '9')
+		{
+			putchar('\n');
+		}
+		else
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		else
-		{
-			n++;
-		}
+		
+		i++;
 	}
-	putchar('\n');
 	return (0);
 }
