@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *
-* main - progrsm that prints _putchar"
+* main - progrsm that prints _putchar
 *
 */
 int main(void)
