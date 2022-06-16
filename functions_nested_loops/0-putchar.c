@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+*
+* main - progrsm that prints _putchar"
+*
+*/
 int main(void)
 {
 	_putchar('_');
