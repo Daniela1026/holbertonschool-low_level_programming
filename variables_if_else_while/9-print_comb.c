@@ -12,9 +12,8 @@ int main(void)
 	while (n <= '9')
 	{
 		putchar(n);
-		n++;
 
-		if (n <= '8')
+		if (n <= '9')
 		{
 			putchar(',');
 			putchar(' ');
@@ -23,6 +22,7 @@ int main(void)
 		{
 			putchar('\n');
 		}
+		n++;
 	}
 	return (0);
 }
