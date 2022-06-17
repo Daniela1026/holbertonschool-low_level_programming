@@ -1,6 +1,8 @@
 #include "main.h"
 /**
-* _islower(int c) - if c is a letter
+* _islower - if c is a letter
+*
+* c - int
 *
 * Return: 0
 */
