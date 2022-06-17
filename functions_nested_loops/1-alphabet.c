@@ -2,10 +2,9 @@
 /**
 * main - alphabet lowercase
 *
-* print_alphabet _putchar
-*
 * Return: 0
 */
+/* print_alphabet _putchar*/
 void print_alphabet(void)
 {
 	char alf = 'a';
