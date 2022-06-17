@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_alphabet - alph a and z
+* _islower - if c is a letter
 *
 * Return: 0
 */
