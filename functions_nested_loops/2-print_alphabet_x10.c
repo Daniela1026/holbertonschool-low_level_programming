@@ -1,11 +1,10 @@
 #include "main.h"
 /**
-* print_alphabetx10 - alph a and z x10
+* print_alphabet_x10 - alphabet
 *
 * Return: 0
 */
-
-void print_alphabetx10(void)
+void print_alphabet_x10(void)
 {
 	int c = 0;
 	char alf;
