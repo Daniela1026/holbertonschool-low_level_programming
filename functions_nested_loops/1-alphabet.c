@@ -1,12 +1,10 @@
 #include "main.h"
 /**
-* main - alphabet lowercase
+* print_alphabet - alph a and z 
 *
 * Return: 0
 */
-/**
-* print_alphabet (void) alph a and z
-*/
+
 void print_alphabet(void)
 {
 	char alf = 'a';
