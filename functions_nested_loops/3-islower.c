@@ -1,8 +1,7 @@
 #include "main.h"
 /**
 * _islower - if c is a letter
-*
-* c - int
+* c: Character int
 *
 * Return: 0
 */
