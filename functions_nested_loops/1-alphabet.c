@@ -5,7 +5,7 @@
 * Return: 0
 */
 /**
-* void print_alphabet (void) alphabet a and z
+* print_alphabet (void) alph a and z
 */
 void print_alphabet(void)
 {
