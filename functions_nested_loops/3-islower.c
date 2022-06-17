@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _islower - if c is a letter
+* _islower(int c) - if c is a letter
 *
 * Return: 0
 */
