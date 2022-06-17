@@ -4,7 +4,9 @@
 *
 * Return: 0
 */
-/* void print_alphabet (void) alphabet a and z*/
+/**
+* void print_alphabet (void) alphabet a and z
+*/
 void print_alphabet(void)
 {
 	char alf = 'a';
