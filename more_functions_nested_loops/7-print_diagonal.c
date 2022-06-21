@@ -1,27 +1,31 @@
 #include "main.h"
 /**
 * print_diagonal - print \
-* @n: character int
+*
+* @n: character int diagonal
+*
 * Return: 0
 */
 void print_diagonal(int n)
 {
-	int l = 0;
-	int lin = l;
+	int l, lin;
 
-	while (n > 0)
+	if (n > 0)
 	{
-		while (lin > 0)
+		for (l = 0; l <= n; l++)
 		{
-			_putchar(' ');
-			lin--;
+			for (lin = 1; lin <= l; lin++)
+			{
+				if (lin != l)
+					_putchar(' ');
+				else if (lin == l)
+				{
+			_putchar('\\');
+				_putchar('\n');
+				}
+				else
+					_putchar('\n');
+			}
 		}
-		_putchar('\\');
-		_putchar('\n');
-			l++;
-		n--;
 	}
-	if (l < 1)
-		_putchar('\n');
 }
-
