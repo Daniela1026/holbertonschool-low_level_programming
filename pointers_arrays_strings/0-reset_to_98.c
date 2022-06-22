@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* _isupper - uppercase and otherwise character
-* @c: Character int
+* reset_to_98 - points to 98
+* @n: Character int
 *
 * Return: 1 and 0
 */
