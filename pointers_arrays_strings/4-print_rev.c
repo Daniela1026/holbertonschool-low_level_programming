@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strlen - lenght of a string
+* print_rev - reverse
 * @s: Character char
 *
 * Return: 1 and 0
