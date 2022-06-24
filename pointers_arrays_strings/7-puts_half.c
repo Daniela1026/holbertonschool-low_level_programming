@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* puts2 - prints a string
+* puts_half - print the second
 * @str: Character char
 *
 * Return: 1 and 0
