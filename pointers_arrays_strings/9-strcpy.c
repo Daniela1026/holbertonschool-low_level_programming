@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_array - print n elements of an array of integers
-* @a: Character int
-* @n: Character int
+* _strcpy - print string pointed
+* @dest: Character int
+* @src: Character int
 *
 * Return: 1 and 0
 */
