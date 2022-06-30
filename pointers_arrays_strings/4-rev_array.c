@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* _strncpy - function that copies a string
-* @dest: Character char
-* @src: Character char
+* reverse_array - reverses integers
+* @a: Character int
 * @n: Character int
 *
 * Return: dest
