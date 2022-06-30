@@ -1,24 +1,28 @@
 #include "main.h"
 /**
-* _isupper - uppercase and otherwise character
-* @c: Character int
+* print_triangle - triangle
+* @size: Character int
 *
 * Return: 1 and 0
 */
 void print_triangle(int size)
 {
-	int s;
-	int z;
+	int s, z;
 
-	for (s = 1; s <= size; s++)
+	if (size > 0)
 	{
-		for (z = 1; z <= size; z++)
+		for (s = 1; s <= size; s++)
+	{
+		for (z = 1; z >= size; z--)
 		{
-			if (z <= size - s)
+			if (s < z)
 				_putchar(' ');
 			else
 				_putchar('#');
 		}
 		_putchar('\n');
 	}
-}
+	}
+	else if (size <= 0)
+			_putchar('\n');
+	}
