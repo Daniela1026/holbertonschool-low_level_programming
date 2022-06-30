@@ -9,7 +9,7 @@ char *leet(char *l)
 {
 	int i = 0;
 
-	while (l[i] != '\0')
+	for (i = 0; l[i] != '\0'; i++)
 	{
 		while (l[i] == 'a' || l[i] == 'A')
 			l[i] = '4';
@@ -21,7 +21,6 @@ char *leet(char *l)
 			l[i] = '7';
 		while (l[i] == 'l' || l[i] == 'L')
 			l[i] = '1';
-		i++;
 	}
 	return (l);
 }
