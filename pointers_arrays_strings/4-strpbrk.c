@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* _strchr - locates a character in a string
+* _strpbrk - set of bytes
 * @s: Character char
-* @c: Character char
+* @accept: Character char
 *
 * Return: 1 and 0
 */
