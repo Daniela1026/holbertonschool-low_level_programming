@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* _memcpy - copies memory area
-* @dest: Character char
-* @src: Character char
-* @n: Character n
+* _strchr - locates a character in a string
+* @s: Character char
+* @c: Character char
 *
 * Return: 1 and 0
 */
