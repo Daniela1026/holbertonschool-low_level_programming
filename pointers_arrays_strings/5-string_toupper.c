@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* reverse_array - reverses integers
-* @a: Character int
-* @n: Character int
+* string_toupper - lowercase and uppercase
+* @l: Character char
 *
 * Return: dest
 */
