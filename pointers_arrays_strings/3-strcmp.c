@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* _strncpy - function that copies a string
-* @dest: Character char
-* @src: Character char
-* @n: Character int
+* _strcmp - compares two strings
+* @s1: Character char
+* @s2: Character char
 *
 * Return: dest
 */
