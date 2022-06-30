@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* _strchr - locates a character in a string
-* @s: Character char
-* @c: Character char
+* _strstr - locates substring
+* @haystack: Character char
+* @needle: Character char
 *
 * Return: 1 and 0
 */
@@ -16,7 +16,7 @@ char *_strstr(char *haystack, char *needle)
 			needle++, i++;
 		if (*needle == '\0')
 			return (haystack - i);
-		haystack -= (i - 1),needle -= i;
+		haystack -= (i - 1), needle -= i;
 	}
 	return ('\0');
 }
