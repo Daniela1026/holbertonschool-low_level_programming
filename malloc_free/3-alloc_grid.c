@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* _strdup - newly allocated space in memory
+* alloc_grid - pointer to a 2 dimensional array of integers
 *
-* @str: Character char
+* @width: Character int
+* @height: Character int
 *
 * Return: 0
 */
@@ -16,7 +17,7 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	a = (int **)malloc(sizeof(int *) * height);
+	a = malloc(sizeof(int *) * height);
 
 	if (a == NULL)
 	{
