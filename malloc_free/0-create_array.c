@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
-* main - prints program
-* @argc: Character int
-* @argv: Character char
+* *create_array -create array of chars
+* @size: Character int
+* @c: Character char
 * Return: 0
 */
 char *create_array(unsigned int size, char c)
