@@ -17,9 +17,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL || s2 == NULL)
 		s1 = s2 = "";
 
-	for (i = 0; s1[i]; i++)
+	i = 0;
+	while (s1[i])
+	{
+		i++;
+	}
 
-		s3 = malloc(sizeof(*s3) * i + n + 1);
+	s3 = malloc(sizeof(*s3) * i + n + 1);
 
 	if (s3 == NULL)
 		return (NULL);
