@@ -3,9 +3,10 @@
 #include "main.h"
 
 /**
-* *create_array -create array of chars
-* @size: Character int
-* @c: Character char
+* string_nconcat - The concatenates two strings
+* @n: Character int
+* @s1: Character char
+* @s2: Character char
 * Return: 0
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -15,18 +16,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL || s2 == NULL)
 		s1 = s2 = "";
-	
-	for (i = 0; s1[i] != '\0'; i++)
+
+	for (i = 0; s1[i]; i++)
 	{
 	}
-	for (s = 0; s2[s] != '\0'; s++)
+	for (s = 0; s2[s]; s++)
 	{
 	}
-	if (n < s)
+	if (s > n)
 		s = n;
-	
+
 	s3 = malloc(sizeof(char) * (i + s + 1));
-	
+
 	if (s3 == NULL)
 		return (NULL);
 
