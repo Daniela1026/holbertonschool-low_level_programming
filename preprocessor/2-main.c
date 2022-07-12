@@ -2,7 +2,7 @@
 
 /**
 * main - prints the name
-*
+* Return: 0
 */
 int main(void)
 {
