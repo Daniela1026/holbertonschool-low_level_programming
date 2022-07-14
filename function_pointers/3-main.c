@@ -22,14 +22,13 @@ int main(int argc, char **argv)
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	
-	 if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
-        {
-                printf("Error\n");
-                exit(100);
-        }
-	 
-	 switch (argv[2][0])
+
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	switch (argv[2][0])
 	{
 		case '+':
 		case '-':
@@ -43,5 +42,5 @@ int main(int argc, char **argv)
 			printf("Error\n");
 			exit(99);
 	}
-	 return (0);
+	return (0);
 }
