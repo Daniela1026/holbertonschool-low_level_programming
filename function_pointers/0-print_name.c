@@ -7,6 +7,7 @@
 * @f: Character void
 * Return: Always 0.
 */
+
 void print_name(char *name, void (*f)(char *))
 {
 	if (name != NULL && *name != '\0' && f != NULL)
