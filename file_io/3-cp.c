@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		exit(standard_error(97, NULL, 0));
-	
+
 	fd2 = open(argv[1], O_RDONLY);
 	if (fd2 == -1)
 		exit(standard_error(98, argv[1], fd2));
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 	reads = read(fd2, buffer, 1024);
 	if (reads == -1)
 		exit(standard_error(98, argv[1], fd2));
-	
+
 	while (reads != 0)
 	{
 		writes = write(fd1, buffer, reads);
@@ -73,13 +73,12 @@ int main(int argc, char *argv[])
 			exit(standard_error(99, argv[2], fd2));
 		reads = read(fd2, buffer, 1024);
 	}
-	
+
 	i = close(fd2);
 	if (i == -1)
 		exit(standard_error(100, argv[1], fd2));
 	n = close(fd1);
-        if (n == -1)
-                exit(standard_error(100, argv[2], fd1));
-
+	if (n == -1)
+		exit(standard_error(100, argv[2], fd1));
 	return (0);
 }
