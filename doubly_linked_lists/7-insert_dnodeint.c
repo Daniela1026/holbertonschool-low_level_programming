@@ -4,10 +4,11 @@
 #include <stdlib.h>
 
 /**
-* *get_dnodeint_at_index - function that returns the
-* nth node of a dlistint_t linked list.
-* @head: Character Pointer
-* @index: Character int
+* insert_dnodeint_at_index - function that inserts
+* a new node at a given position
+* @h: Character Pointer
+* @idx: Character int
+* @n: Character int
 * Return: return NULL
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
