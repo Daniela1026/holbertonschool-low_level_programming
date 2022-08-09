@@ -8,24 +8,19 @@
 */
 void print_diagonal(int n)
 {
-	int l, lin;
+	int i;
+	int s;
 
 	if (n > 0)
 	{
-		for (l = 0; l <= n; l++)
+		for (i = 1; i <= n; i++)
 		{
-			for (lin = 1; lin <= l; lin++)
-			{
-				if (lin != l)
-					_putchar(' ');
-				else if (lin == l)
-				{
+			for (s = 1; s < i; s++)
+				_putchar(' ');
 			_putchar('\\');
-				_putchar('\n');
-				}
-				else
-					_putchar('\n');
-			}
+			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
