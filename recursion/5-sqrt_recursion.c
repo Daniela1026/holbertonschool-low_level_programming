@@ -8,15 +8,13 @@
 */
 int func(int n, int i)
 {
-	int r;
-	r = n * n;
-	if (r == i)
-		return (n);
-	if (r < i)
-		return (func(n + 1, i));
-	else
+	if ((i * i) == n)
+		return (i);
+	else if ((i * i) > n)
 		return (-1);
+	return (func(n, (i + 1)));
 }
+
 /**
 * _sqrt_recursion - returns the natural square root of a number
 * @n: Character int
@@ -24,5 +22,8 @@ int func(int n, int i)
 */
 int _sqrt_recursion(int n)
 {
-	return (func(n, 1));
+	int l = 1, s;
+
+	s = func(n, l);
+	return (s);
 }
