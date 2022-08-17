@@ -11,14 +11,14 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int bit;
+	unsigned long int bits;
+	unsigned long int m = 1;
 
-	if (n == NULL)
+	bits = (sizeof(unsigned long int) * 8);
+	if (index > bits)
 		return (-1);
+	m = ~(m << index);
+	*n = (*n & m);
 
-	bit = 1 << index;
-
-	if ((bit | *n) == *n)
-		*n = *n ^ bit;
 	return (1);
 }
