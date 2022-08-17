@@ -8,26 +8,27 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int ent = 0;
-	unsigned int bin = 0, str = 0;
-
+	int i, n, str;
+	unsigned int sum = 0, mul;
+	
 	if (b == NULL)
-		return (ent);
-
-	for (bin = 0; b[bin] != '\0'; bin++)
+		return (0);
+	
+	for (str = 0; b[str]; str++)
 	{
-		bin -= 1;
+		if (b[str] != 48 && b[str] != 49)
+			return (0);
 	}
-
-	while (b[str])
+	
+	str--;
+	
+	for (i = 0; b[i]; i++)
 	{
-		if ((b[str] != '0') && (b[str] != '1'))
-			return (ent);
-
-		if (b[str] == '1')
-			ent += (1 * (1 << bin));
-		str++;
-		bin--;
+		mul = 1;
+		for (n = 1; n <= (str - i); n++)
+			mul = mul * 2;
+		mul = mul * (b[i] - '0');
+		sum = sum + mul;
 	}
-	return (ent);
+	return (sum);
 }
