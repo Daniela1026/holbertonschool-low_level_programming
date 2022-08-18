@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -11,13 +12,44 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *d;
+	dog_t *ndog;
+	char *nam, *own;
+	int i = 0, lenn = 0, leno = 0;
 
-	d = malloc(sizeof(struct dog));
-	if (d == NULL)
+	ndog = malloc(sizeof(dog_t));
+	if (ndog == NULL)
 		return (NULL);
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
-	return (d);
+	if (name != NULL && owner != NULL)
+	{
+		while (name[i++])
+			lenn++;
+		i = 0;
+		while (owner[i++])
+			leno++;
+		i = 0;
+	}
+	nam = malloc(sizeof(char) * (lenn + 1));
+	own = malloc(sizeof(char) * (leno + 1));
+	if (nam == NULL || own == NULL)
+	{
+		free(ndog), free(nam), free(own);
+		return (NULL);
+	}
+	while (name[i])
+	{
+		nam[i] = name[i];
+		i++;
+	}
+	nam[i] = name[i];
+	i = 0;
+	while (owner[i])
+	{
+		own[i] = owner[i];
+		i++;
+	}
+	own[i] = owner[i];
+	ndog->name = nam;
+	ndog->age = age;
+	ndog->owner = own;
+	return (ndog);
 }
