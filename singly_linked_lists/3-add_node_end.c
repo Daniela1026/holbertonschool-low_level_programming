@@ -2,14 +2,12 @@
 #include "lists.h"
 #include <stdlib.h>
 
-/**                                                                                                                                                                          
- *
- * add_node - adds a new node at the beginning of a list_t
- * @head: Character list_t pointer
- * @str: Character char pointer
- * Return: element
- * 
- */
+/**
+* add_node_end - adds a new node at the beginning of a list_t
+* @head: Character list_t pointer
+* @str: Character char pointer
+* Return: element
+*/
 
 list_t *add_node_end(list_t **head, const char *str)
 {
