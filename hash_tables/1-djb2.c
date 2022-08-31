@@ -3,7 +3,7 @@
 /**
 * hash_djb2 - implementing the djb2 algorithm
 * @str: Character char
-* Return: hash
+* Return: hash Null
 */
 
 unsigned long int hash_djb2(const unsigned char *str)
